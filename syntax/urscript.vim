@@ -82,7 +82,7 @@ hi def link urscriptTodo        Todo
 hi def link urscriptKeywords    Keyword
 hi def link urscriptOperators   Operator
 hi def link urscriptIdentifier  Identifier
-hi def link urscriptFunction Function
+hi def link urscriptFunction    Function
 
 hi def link urscriptLabelText   String
 hi def link urscriptLabelNumber Number
