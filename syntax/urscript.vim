@@ -47,6 +47,9 @@ syn match  urscriptLabelNumber     "\d\+"     contained nextgroup=urscriptLabelT
 syn match  urscriptLabel           "^[$]"     nextgroup=urscriptLabelNumber skipwhite
 syn match  urscriptLabelError      "^\s\+[$]" nextgroup=urscriptLabelNumber skipwhite
 
+" Function Definitions
+syn match urscriptFunction "\zs\(\k\w*\)*\s*\ze("
+
 " Strings.
 syn region  urscriptString start="\"" skip="\\" end="\""
 
@@ -79,6 +82,7 @@ hi def link urscriptTodo        Todo
 hi def link urscriptKeywords    Keyword
 hi def link urscriptOperators   Operator
 hi def link urscriptIdentifier  Identifier
+hi def link urscriptFunction Function
 
 hi def link urscriptLabelText   String
 hi def link urscriptLabelNumber Number
